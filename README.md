@@ -6,11 +6,11 @@ Nep is a bot.
 The prefix is nep! example: "nep!cat"
 
 #### General commands:
-1. Help **List all the commands**
-2. Cat **Nep sends a random picture of a cute cat ^^**
-3. Ping **Check if the bot is working**
-4. Cowsay < input > **Make the ascii cow say something**
-5. Garfield **Random garfield comic**
-6. UrbanDict **Look up a word in the urban dictionary**
+1. help **List all the commands**
+2. cat **Nep sends a random picture of a cat ** :cat:
+3. ping **Check if the bot is working**
+4. cowsay < input > **Make the ascii cow say something**
+5. garfield **Random garfield comic**
+6. urbandict **Look up a word in the urban dictionary**
 #### NSFW commands:
-1. R34 < input > **pull images from rule 34**
+1. r34 < input > **pull images from rule 34**
