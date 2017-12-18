@@ -7,7 +7,7 @@ The prefix is megu! example: "megu!cat"
 
 #### General commands:
 1. help **List all the commands**
-2. cat **Nep sends a random picture of a cat** :cat:
+2. cat **Megumin sends a random picture of a cat** :cat:
 3. ping **Check if the bot is working**
 4. cowsay < input > **Make the ascii cow say something**
 5. garfield **Random garfield comic**
