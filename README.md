@@ -1,9 +1,9 @@
-# Nep
-Nep is a bot. 
+# Megumin
+Megumin is a bot. 
 
 [Invite Me!](https://discordapp.com/api/oauth2/authorize?client_id=337569157857935361&permissions=8&scope=bot)
 # Commands
-The prefix is nep! example: "nep!cat"
+The prefix is megu! example: "megu!cat"
 
 #### General commands:
 1. help **List all the commands**
