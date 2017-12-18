@@ -15,7 +15,7 @@ module.exports = function(param,clientArg, args) { // it sends help
                             value: "Pong."
                         },{
                             name: "megu!cat",
-                            value: "Nep sends a random cat image! *MEOW ^^*"
+                            value: "Megumin sends a random cat image! *MEOW ^^*"
                         },
 			{
                             name: "megu!urbandict <input>",
@@ -34,7 +34,7 @@ module.exports = function(param,clientArg, args) { // it sends help
                             value: ":clock1030: Tell you how long the bot has been running for!"
                         },{
                             name: "megu!8ball",
-                            value: ":8ball: Nep will read your future! ^^"
+                            value: ":8ball: Megumin will read your future! ^^"
                         }],
                         color: 0xa71bba,
                         footer: {
