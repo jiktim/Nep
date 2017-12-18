@@ -4,27 +4,27 @@ module.exports = function(param,clientArg, args) { // it sends help
                 return clientArg.createMessage(dm.id, {
                     embed: {
                         author: {
-                            name: "Nep. \nCoded by FireC, TTtie, Cth103."
+                            name: "Megumin. \nCoded by FireC, TTtie, Cth103."
                         },
 			description: "Commands:",
                         fields: [{
-                            name: "nep!help",
+                            name: "megu!help",
                             value: "Sends this message."
                         },{
-                            name: "nep!ping",
+                            name: "megu!ping",
                             value: "Pong."
                         },{
-                            name: "nep!cat",
+                            name: "megu!cat",
                             value: "Nep sends a random cat image! *MEOW ^^*"
                         },
 			{
-                            name: "nep!urbandict <input>",
+                            name: "megu!urbandict <input>",
                             value: "Pull info from the urban dictionary!"
                         },{
-                            name: "nep!garfield",
+                            name: "megu!garfield",
                             value: "Random garfield comic"
                         },{
-                            name: "nep!r34 <input>",
+                            name: "megu!r34 <input>",
                             value: "Pull images from rule34, how lewd! ^^"
                         },{
                             name: "nep!cowsay <input>",
