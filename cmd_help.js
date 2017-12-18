@@ -27,13 +27,13 @@ module.exports = function(param,clientArg, args) { // it sends help
                             name: "megu!r34 <input>",
                             value: "Pull images from rule34, how lewd! ^^"
                         },{
-                            name: "nep!cowsay <input>",
+                            name: "megu!cowsay <input>",
                             value: ":cow: <( Moo!)"
                         },{
-                            name: "nep!uptime",
+                            name: "megu!uptime",
                             value: ":clock1030: Tell you how long the bot has been running for!"
                         },{
-                            name: "nep!8ball",
+                            name: "megu!8ball",
                             value: ":8ball: Nep will read your future! ^^"
                         }],
                         color: 0xa71bba,
