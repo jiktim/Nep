@@ -2,6 +2,7 @@
 Megumin is a bot. 
 
 [Invite Me!](https://discordapp.com/api/oauth2/authorize?client_id=337569157857935361&permissions=8&scope=bot)
+(The bot will be offline for a lot of time because of hosting issues)
 # Commands
 The prefix is megu! example: "megu!cat"
 
