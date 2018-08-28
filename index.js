@@ -2,7 +2,7 @@
 'use strict';
 var fs = require("fs")
 const Eris = require("eris");
-var bot = new Eris("MjU1Mzk3Njc4NDkyNDE4MDQ4.Dmbr-w.G-T1AMKUUijQ98yQ0bDEGp_UqP0");
+var bot = new Eris("no");
 var prefix = "~";
 //anyone can set the custom prefix, isnt that right.
 var customprefix = "meg!";
