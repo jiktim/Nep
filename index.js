@@ -13,24 +13,26 @@ var AllGames = ["With Aqua 💙", "With Darkness 💛", "With Kazuma 💚", "Wit
 try {
 let cmds = {};
 //load
-let loadAll = function () {
+let loadAll = function() {
     let fa = fs.readdirSync("./");
     for (let i = 0; i < fa.length; i++) {
         let cmF = fa[i];
         if (/.+\.js$/.test(cmF)) {
-            if (!cmF.startsWith("cmd_")) return;
             let cmN = cmF.match(/(.+)\.js$/)[1]
             try {
-                let cmFL = require(`./${cmN}`)
-                console.log(`at ${__filename}, loading the stupid ${cmN.replace(/cmd_/, "")} command, file ${cmF}`)
-                cmds[cmN.replace(/cmd_/, "").toLowerCase()] = cmFL;
+                let cmFL = require("../assets/cmds/" + cmN + ".js")
+                cmFL.id = cmN;
+                if (cmFL.isCmd) {
+                    console.log(`${__filename}      | Loading ${cmN} command, file ${cmF}`)
+                }
+                else console.log(__filename + "    | Skipping non-command " + cmF)
             } catch (err) {
-                console.error(`error when loading ${cmN.replace(/cmd_/, "")}: ${err}`)
+                console.error(`Error while loading command ${cmN}: ${err}`)
                 console.error(err)
             }
 
         } else {
-            console.log(cmF+" is not js lol lol ")
+            console.log(__filename + "     | Skipping non-JS " + cmF)
         }
     }
 }
