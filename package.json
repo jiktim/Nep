@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jiktim/megumin/issues"
   },
-  "homepage": "https://github.com/jiktim/megumin#readme"
+  "homepage": "https://github.com/jiktim/megumin#readme",
+  "dependencies": {
+    "booru": "^0.4.0"
+  }
 }

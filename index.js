@@ -2,7 +2,7 @@
 'use strict';
 var fs = require("fs")
 const Eris = require("eris");
-var bot = new Eris("lul no");
+var bot = new Eris("MjU1Mzk3Njc4NDkyNDE4MDQ4.Dmbr-w.G-T1AMKUUijQ98yQ0bDEGp_UqP0");
 var prefix = "~";
 //anyone can set the custom prefix, isnt that right.
 var customprefix = "meg!";
@@ -23,7 +23,7 @@ let loadAll = function() {
                 cmds[name.replace("cmd_", "")] = require("./" + name + ".js")
                 console.log(cmF.split(".js")[0] + ".js")
             }
-        } 
+        }
     }
 }
 Object.defineProperty(Eris.Message.prototype, "guild", {
@@ -72,7 +72,7 @@ bot.on("messageCreate", msg => {
         var args = command.slice((commandName.length + 1))
         if (cmds[commandName]) {
             try {
-                cmds[commandName](msg, bot, args, cmds)
+                cmds[commandName](msg, bot, args, bot, cmds)
             } catch (e) {
                 console.error(e)
             }

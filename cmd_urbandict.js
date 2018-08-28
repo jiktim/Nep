@@ -9,7 +9,7 @@ module.exports = function(param, clientArg, args) { // it sends urban dictionary
             "title": args + " By " + pack.list[1].author,
             "description": pack.list[1].definition,
             "color": 16580352,
-            "timestamp": "2018-08-28T13:52:19.234Z",
+            "timestamp": new Date(),
             "footer": {
               "icon_url": "https://cdn.discordapp.com/avatars/255397678492418048/a8e516d198c913fb897aa592ce21e260.png",
               "text": "~urbandict"
