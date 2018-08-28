@@ -11,7 +11,7 @@ exports.customprefix = customprefix;
 //jew shit
 var AllGames = ["With Aqua 💙", "With Darkness 💛", "With Kazuma 💚", "With Wiz 💜", "With Yunyun ❤️", "With Komekko ❤️", "With code!", "With Fire 🔥"];
 try {
-let cmds = {};
+var cmds = new Array();
 //load
 let loadAll = function() {
     let fa = fs.readdirSync("./");
@@ -20,7 +20,7 @@ let loadAll = function() {
         if (cmF.endsWith(".js")) {
             var name = cmF.split(".js")[0];
             if (name != "index") {
-                let cmds[name.replace("cmd_", "")] = require("./" + name + ".js")
+                cmds[name.replace("cmd_", "")] = require("./" + name + ".js")
                 console.log(cmF.split(".js")[0] + ".js")
             }
         } 
