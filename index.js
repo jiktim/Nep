@@ -18,22 +18,10 @@ let loadAll = function() {
     for (let i = 0; i < fa.length; i++) {
         let cmF = fa[i];
         if (cmF.endsWith(".js")) {
-            let cmN = cmF.match(/(.+)\.js$/)[1]
-            try {
-                let cmFL = require("./" + cmN + ".js")
-                cmFL.id = cmN;
-                if (cmFL.isCmd) {
-                    console.log(`${__filename}      | Loading ${cmN} command, file ${cmF}`)
-                }
-                else console.log(__filename + "    | Skipping non-command " + cmF)
-            } catch (err) {
-                console.error(`Error while loading command ${cmN}: ${err}`)
-                console.error(err)
-            }
-
-        } else {
-            console.log(__filename + "     | Skipping non-JS " + cmF)
-        }
+            var name = cmF.split(".js")[0];
+            let cmFL = require("./" + name + ".js")
+            console.log(cmF.split(".js")[0] + ".js")
+        } 
     }
 }
 Object.defineProperty(Eris.Message.prototype, "guild", {
