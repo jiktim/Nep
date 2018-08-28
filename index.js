@@ -17,7 +17,7 @@ let loadAll = function() {
     let fa = fs.readdirSync("./");
     for (let i = 0; i < fa.length; i++) {
         let cmF = fa[i];
-        if (/.+\.js$/.test(cmF)) {
+        if (cmF.endsWith(".js")) {
             let cmN = cmF.match(/(.+)\.js$/)[1]
             try {
                 let cmFL = require("./" + cmN + ".js")
