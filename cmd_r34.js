@@ -4,11 +4,11 @@ var booru = require('booru');
 var argument = new Array();
 module.exports = function(param, clientArg, args) { // it sends help
 	argument[0] = clientArg;
-	const search = await booru.search('r34', argument, {
+	const search = booru.search('r34', argument, {
           limit: 1,
           random: true
         }),
-        var common = await booru.commonfy(search);
+        var common = booru.commonfy(search);
 	      
 	if(param.channel.nsfw) {
 		param.channel.createMessage(':weary: :ok_hand: ' + common[0].common.file_url);
