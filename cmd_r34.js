@@ -11,7 +11,7 @@ module.exports = function(param, clientArg, args) { // it sends help
 		} else {
 			param.channel.createMessage('This is not an NSFW channel :smiley:');
 		}
-	}).catch(e) {
+	}).catch(e => {
 		console.log(e);
 		param.channel.createMessage(':rage: :ok_hand: There isn\'t porn out of it! How? :thinking:');
 	}
