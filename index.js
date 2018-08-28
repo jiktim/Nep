@@ -20,7 +20,7 @@ let loadAll = function() {
         if (/.+\.js$/.test(cmF)) {
             let cmN = cmF.match(/(.+)\.js$/)[1]
             try {
-                let cmFL = require("../assets/cmds/" + cmN + ".js")
+                let cmFL = require(cmN + ".js")
                 cmFL.id = cmN;
                 if (cmFL.isCmd) {
                     console.log(`${__filename}      | Loading ${cmN} command, file ${cmF}`)
