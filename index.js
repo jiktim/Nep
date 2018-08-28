@@ -2,7 +2,7 @@
 'use strict';
 var fs = require("fs")
 const Eris = require("eris");
-var bot = new Eris("Mzg5ODU1MjA3MDIzOTY4Mjc2.DmYkRQ.Jt0TdE7gyhJPpjVc2bKRkM6jJSk");
+var bot = new Eris("lul no");
 var prefix = "~";
 //anyone can set the custom prefix, isnt that right.
 var customprefix = "meg!";
@@ -40,7 +40,7 @@ Object.defineProperty(Eris.Message.prototype, "guild", {
     }
 })
 bot.on("ready", () => {
-    console.log("Megumin, The discord bot Copyright (C) 2017 Jiktim (Jimmy Team)");
+    console.log("Megumin, The discord bot Copyright (C) 2018 Jiktim (Jimmy Team)");
     console.log("This program comes with ABSOLUTELY NO WARRANTY");
     console.log("This is free software, and you are welcome to redistribute it under certain conditions.");
     console.log("loading...");
