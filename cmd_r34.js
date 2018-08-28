@@ -11,7 +11,7 @@ module.exports = function(param, clientArg, args) { // it sends help
 		if(param.channel.nsfw) {
     			param.channel.createMessage(':weary: :ok_hand: http:' + child.attr('file_url').value());
 		} else {
-			param.channel.createMessage('Oops, this is not an NSFW channel :smile:');
+			param.channel.createMessage('This is not an NSFW channel :smiley:');
 		}
 	} catch (e) {
 		console.log(e);
