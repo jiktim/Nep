@@ -20,7 +20,7 @@ let loadAll = function() {
         if (cmF.endsWith(".js")) {
             var name = cmF.split(".js")[0];
             if (name != "index") {
-                let cmFL = require("./" + name + ".js")
+                let cmds[name.replace("cmd_", "")] = require("./" + name + ".js")
                 console.log(cmF.split(".js")[0] + ".js")
             }
         } 
