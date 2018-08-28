@@ -12,7 +12,7 @@ module.exports = function(param, clientArg, args) { // it sends help
         common = booru.commonfy(search);
 	      
 	if(param.channel.nsfw) {
-		param.channel.createMessage(':weary: :ok_hand: ' + common[0].common.file_url);
+		param.channel.createMessage(':weary: :ok_hand: ' + common[0]);
 	} else {
 		param.channel.createMessage('This is not an NSFW channel :smiley:');
 	}
