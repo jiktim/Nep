@@ -19,8 +19,10 @@ let loadAll = function() {
         let cmF = fa[i];
         if (cmF.endsWith(".js")) {
             var name = cmF.split(".js")[0];
-            let cmFL = require("./" + name + ".js")
-            console.log(cmF.split(".js")[0] + ".js")
+            if (name != "index") {
+                let cmFL = require("./" + name + ".js")
+                console.log(cmF.split(".js")[0] + ".js")
+            }
         } 
     }
 }
