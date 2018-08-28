@@ -1,9 +1,10 @@
 var request = require('request');
 var booru = require('booru');
 // beta
-
+var argument = new Array();
 module.exports = function(param, clientArg, args) { // it sends help
-	booru.search("rule34.xxx", clientArg, {limit: 1, random: true})
+	argument[0] = clientArg;
+	booru.search("rule34.xxx", argument, {limit: 1, random: true})
 		.then(booru.commonfy)
 		.then(images => {
 		if(param.channel.nsfw) {
