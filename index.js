@@ -2,14 +2,14 @@
 'use strict';
 var fs = require("fs")
 const Eris = require("eris");
-var bot = new Eris("BOT_TOKEN");
-var prefix = "nep!";
+var bot = new Eris("Mzg5ODU1MjA3MDIzOTY4Mjc2.DmYkRQ.Jt0TdE7gyhJPpjVc2bKRkM6jJSk");
+var prefix = "~";
 //anyone can set the custom prefix, isnt that right.
-var customprefix = "nep~";
+var customprefix = "meg!";
 var ah = "";
-exports.customprefix = customprefix; 
+exports.customprefix = customprefix;
 //jew shit
-var AllGames = ["With Nepgear 💜", "With Vert 💜", "With Plutia 💜", "With Noire 💜", "With IF 💜", "With Blanc 💜", "With Uni 💜", "With Fire 🔥"];
+var AllGames = ["With Aqua 💙", "With Darkness 💛", "With Kazuma 💚", "With Wiz 💜", "With Yunyun ❤️", "With Komekko ❤️", "With code!", "With Fire 🔥"];
 try {
 let cmds = {};
 //load
@@ -40,13 +40,13 @@ Object.defineProperty(Eris.Message.prototype, "guild", {
     }
 })
 bot.on("ready", () => {
-    console.log("Nep, The discord bot Copyright (C) 2017 Jiktim (Jimmy Team)");
+    console.log("Megumin, The discord bot Copyright (C) 2017 Jiktim (Jimmy Team)");
     console.log("This program comes with ABSOLUTELY NO WARRANTY");
     console.log("This is free software, and you are welcome to redistribute it under certain conditions.");
     console.log("loading...");
     loadAll();
     console.log("I am ready, BEEP BOOP."); // log when the bot is ready
-    setGame(AllGames[Math.floor(Math.random()*AllGames.length)] +" | nep!help"); //set the game
+    setGame(AllGames[Math.floor(Math.random()*AllGames.length)] +" | ~help"); //set the game
 });
 bot.on("guildCreate", svr => {
     console.log("New Server : " + svr.name || " vietnam war "); //log when the bot gets added to a new guild

@@ -8,37 +8,37 @@ module.exports = function(param,clientArg, args) { // it sends help
                         },
 			description: "Commands:",
                         fields: [{
-                            name: "megu!help",
+                            name: "~help",
                             value: "Sends this message."
                         },{
-                            name: "megu!ping",
+                            name: "~ping",
                             value: "Pong."
                         },{
-                            name: "megu!cat",
+                            name: "~cat",
                             value: "Megumin sends a random cat image! *MEOW ^^*"
                         },
 			{
-                            name: "megu!urbandict <input>",
+                            name: "~urbandict <input>",
                             value: "Pull info from the urban dictionary!"
                         },{
-                            name: "megu!garfield",
+                            name: "~garfield",
                             value: "Random garfield comic"
                         },{
-                            name: "megu!r34 <input>",
+                            name: "~r34 <input>",
                             value: "Pull images from rule34, how lewd! ^^"
                         },{
-                            name: "megu!cowsay <input>",
+                            name: "~cowsay <input>",
                             value: ":cow: <( Moo!)"
                         },{
-                            name: "megu!uptime",
+                            name: "~uptime",
                             value: ":clock1030: Tell you how long the bot has been running for!"
                         },{
-                            name: "megu!8ball",
+                            name: "~8ball",
                             value: ":8ball: Megumin will read your future! ^^"
                         }],
                         color: 0xa71bba,
                         footer: {
-                            text: `nep!help`
+                            text: `~help`
                         }
                     }
                 });
