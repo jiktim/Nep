@@ -6,7 +6,7 @@ module.exports = function(param, clientArg, args) { // it sends help
     request('http://rule34.xxx/index.php?page=dapi&s=post&q=index&tags='+encodeURI(args), function(error, response, body) {
 	let xmlDoc = libxmljs.parseXml(body);
 	let children = xmlDoc.root().childNodes();
-	console.log(children);
+	console.log(xmlDoc);
 	let child = children[Math.floor(children.length * Math.random())];
 	try {
 		if(param.channel.nsfw) {
