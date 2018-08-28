@@ -6,10 +6,11 @@ module.exports = function(param, clientArg, args) { // it sends help
     request('http://rule34.xxx/index.php?page=dapi&s=post&q=index&tags='+encodeURI(args), function(error, response, body) {
 	let xmlDoc = libxmljs.parseXml(body);
 	let children = xmlDoc.root().childNodes();
+	console.log(children);
 	let child = children[Math.floor(children.length * Math.random())];
 	try {
 		if(param.channel.nsfw) {
-    			param.channel.createMessage(':weary: :ok_hand: http:' + child.attr('file_url').value());
+    			param.channel.createMessage(':weary: :ok_hand: ' + child.attr('file_url').value());
 		} else {
 			param.channel.createMessage('This is not an NSFW channel :smiley:');
 		}
