@@ -1,5 +1,5 @@
 var request = require('request');
-const booru = require('booru'),
+var booru = require('booru');
 // beta
 
 module.exports = function(param, clientArg, args) { // it sends help
