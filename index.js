@@ -2,7 +2,8 @@
 'use strict';
 var fs = require("fs")
 const Eris = require("eris");
-var bot = new Eris("wtf did u do");
+var token = "ok"; //dont fricking leak
+var bot = new Eris(token);
 var prefix = "~";
 //anyone can set the custom prefix, isnt that right.
 var customprefix = "meg!";
