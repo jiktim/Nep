@@ -7,7 +7,7 @@ const ytdl = require("ytdl-core");
 const ytcache = './youtube-cache/' //where the files will be temporearly downloaded to!
 const fs = require("fs");
 var queue = new Array();
-var isplaying = false;
+var isplaying = true;
 const youtube = google.youtube({
   version: 'v3',
   auth: key
@@ -40,6 +40,15 @@ module.exports = function(msg, bot, args) {
 			bot.createMessage(msg.channel.id, "Finished **" + video.snippet.title+"**");
 			bot.leaveVoiceChannel(msg.member.voiceState.channelID);
 			isplaying = false;
+			args = queue[0];
+			queue.remove(0);
+			if(args.includes("://www.youtube.com")) {
+				manageYoutubeLink()
+			} else if(args.includes("://youtu.be")) {
+				manageYoutuDotBe();
+			} else {
+				search(args);
+			}
 		});
 		});
 	}
@@ -63,6 +72,15 @@ module.exports = function(msg, bot, args) {
 					isplaying = false;
 					bot.createMessage(msg.channel.id, "Finished **" + response.data.items[0].snippet.title+"**");
 					bot.leaveVoiceChannel(msg.member.voiceState.channelID);
+					args = queue[0];
+					queue.remove(0);
+					if(args.includes("://www.youtube.com")) {
+						manageYoutubeLink()
+					} else if(args.includes("://youtu.be")) {
+						manageYoutuDotBe();
+					} else {
+						search(args);
+					}
 				});
 		});
 		});
@@ -86,6 +104,15 @@ module.exports = function(msg, bot, args) {
 					isplaying = false;
 					bot.createMessage(msg.channel.id, "Finished **" + response.data.items[0].snippet.title+"**");
 					bot.leaveVoiceChannel(msg.member.voiceState.channelID);
+					args = queue[0];
+					queue.remove(0);
+					if(args.includes("://www.youtube.com")) {
+						manageYoutubeLink()
+					} else if(args.includes("://youtu.be")) {
+						manageYoutuDotBe();
+					} else {
+						search(args);
+					}
 				});
 		});
 		});
