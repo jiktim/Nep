@@ -10,7 +10,7 @@ var customprefix = "meg!";
 var ah = "";
 exports.customprefix = customprefix;
 //jew shit
-var AllGames = ["With Aqua 💙", "With Darkness 💛", "With Kazuma 💚", "With Wiz 💜", "With Yunyun ❤️", "With Komekko ❤️", "With code!", "With Fire 🔥"];
+var AllGames = ["With Aqua \uD83D\uDC99", "With Darkness \uD83D\uDC9B", "With Kazuma \uD83D\uDC9A", "With Wiz \uD83D\uDC9C", "With Yunyun \u2764", "With Komekko \u2764", "With code!", "With Fire \uD83D\uDD25"];
 try {
 var cmds = new Array();
 //load
