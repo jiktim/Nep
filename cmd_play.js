@@ -41,7 +41,7 @@ module.exports = function(msg, bot, args) {
 			bot.leaveVoiceChannel(msg.member.voiceState.channelID);
 			isplaying = false;
 			args = queue[0];
-			queue.remove(0);
+			queue.shift();
 			if(args.includes("://www.youtube.com")) {
 				manageYoutubeLink()
 			} else if(args.includes("://youtu.be")) {
@@ -73,7 +73,7 @@ module.exports = function(msg, bot, args) {
 					bot.createMessage(msg.channel.id, "Finished **" + response.data.items[0].snippet.title+"**");
 					bot.leaveVoiceChannel(msg.member.voiceState.channelID);
 					args = queue[0];
-					queue.remove(0);
+					queue.shift();
 					if(args.includes("://www.youtube.com")) {
 						manageYoutubeLink()
 					} else if(args.includes("://youtu.be")) {
@@ -105,7 +105,7 @@ module.exports = function(msg, bot, args) {
 					bot.createMessage(msg.channel.id, "Finished **" + response.data.items[0].snippet.title+"**");
 					bot.leaveVoiceChannel(msg.member.voiceState.channelID);
 					args = queue[0];
-					queue.remove(0);
+					queue.shift();
 					if(args.includes("://www.youtube.com")) {
 						manageYoutubeLink()
 					} else if(args.includes("://youtu.be")) {
