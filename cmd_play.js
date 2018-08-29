@@ -95,13 +95,19 @@ module.exports = function(msg, bot, args) {
 			msg.channel.createMessage('You have to be in a voice channel!');
 		} else {
 			console.log(args);
-			if(args.includes("://www.youtube.com")) {
-				manageYoutubeLink()
-			} else if(args.includes("://youtu.be")) {
-				manageYoutuDotBe();
-			} else {
-				search(args);
+			if (isplaying) {
+				bot.createMessage(msg.channel.id, "adding to queue");
+				queue.push(args);
+			} else { 
+				if(args.includes("://www.youtube.com")) {
+					manageYoutubeLink()
+				} else if(args.includes("://youtu.be")) {
+					manageYoutuDotBe();
+				} else {
+					search(args);
+				}
 			}
+			
 		}
   } else {
 	msg.channel.createMessage('You have to specify a song!');
