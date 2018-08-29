@@ -2,7 +2,7 @@
 'use strict';
 var fs = require("fs")
 const Eris = require("eris");
-var bot = new Eris("no");
+var bot = new Eris("MjU1Mzk3Njc4NDkyNDE4MDQ4.DmfAEA.todFVewNfxPZZ7EpR0dJgCq7Y5c");
 var prefix = "~";
 //anyone can set the custom prefix, isnt that right.
 var customprefix = "meg!";
@@ -42,7 +42,7 @@ bot.on("ready", () => {
     console.log("loading...");
     loadAll();
     console.log("I am ready, BEEP BOOP."); // log when the bot is ready
-    setGame(AllGames[math.floor(AllGames.length * math.random())] +"  ~help"); //set the game
+    setGame(AllGames[Math.floor(AllGames.length * Math.random())] +"  ~help"); //set the game
 });
 bot.on("guildCreate", svr => {
     console.log("New Server : " + svr.name || " vietnam war "); //log when the bot gets added to a new guild
