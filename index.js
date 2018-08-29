@@ -26,6 +26,10 @@ let loadAll = function() {
         }
     }
 }
+function setGame(ok) {
+    var game = { name: ok };
+    bot.editStatus("online", game);
+}
 Object.defineProperty(Eris.Message.prototype, "guild", {
     get: function () {
         return this.channel.guild;
@@ -38,7 +42,7 @@ bot.on("ready", () => {
     console.log("loading...");
     loadAll();
     console.log("I am ready, BEEP BOOP."); // log when the bot is ready
-    setGame(AllGames[Math.floor(Math.random()*AllGames.length)] +" | ~help"); //set the game
+    setGame(AllGames[math.floor(AllGames.length * math.random())] +"  ~help"); //set the game
 });
 bot.on("guildCreate", svr => {
     console.log("New Server : " + svr.name || " vietnam war "); //log when the bot gets added to a new guild
@@ -83,8 +87,4 @@ bot.on("messageCreate", msg => {
       console.log("ERROR: "+err);
     }
 
-function setGame(ok) {
-    var game = { name: ok };
-    bot.editStatus("online", game);
-}
 bot.connect();
