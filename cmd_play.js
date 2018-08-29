@@ -7,7 +7,7 @@ const ytdl = require("ytdl-core");
 const ytcache = './youtube-cache/' //where the files will be temporearly downloaded to!
 const fs = require("fs");
 var queue = new Array();
-var isplaying = true;
+var isplaying = false;
 const youtube = google.youtube({
   version: 'v3',
   auth: key
