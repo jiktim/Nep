@@ -72,7 +72,7 @@ bot.on("messageCreate", msg => {
         var args = command.slice((commandName.length + 1))
         if (cmds[commandName]) {
             try {
-                cmds[commandName](msg, bot, args, bot, cmds)
+                cmds[commandName](msg, bot, args, cmds)
             } catch (e) {
                 console.error(e)
             }

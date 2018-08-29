@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/jiktim/megumin#readme",
   "dependencies": {
-    "booru": "^0.4.0"
+    "booru": "^0.4.0",
+    "googleapis": "^33.0.0",
+    "youtube-search": "^1.1.1",
+    "ytdl-core": "^0.24.0"
   }
 }
