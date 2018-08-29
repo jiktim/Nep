@@ -6,11 +6,11 @@ Math.seed = function(s) {
 module.exports = function(msg, bot, args) {
   if(!args) {
  	var inches = Math.floor(Math.seed(msg.member.id)() * 30) + 1  * 2
-	var dick = "8"+"=".repeat(inches/2)+"D";
-	msg.channel.createMessage(dick + " ("+inches.toString()+" inches)")
+	var dick = "["+"=".repeat(inches/2)+"]";
+	msg.channel.createMessage(dick + " ("+inches.toString()+"/10)")
 } else {
   var inches = Math.floor(Math.seed(msg.mentions[0].id)() * 30) + 1  * 2
   var dick = "8"+"=".repeat(inches/2)+"D";
-  msg.channel.createMessage(dick + " ("+inches.toString()+" inches)")
+  msg.channel.createMessage(dick + " ("+inches.toString()+"/10)")
 }
 }
