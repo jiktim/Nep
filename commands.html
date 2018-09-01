@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Megumin</title>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <meta property="og:title" content="Megumin">
+    <meta property="og:description" content="Megumin commands!">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <ul>
+        <li style="float: left;"><a class="active" href="./index.html">Home</a></li>
+        <li style="float: left;"><a href="#idk">idk</a></li>
+    </ul>
+    <br>
+    <script>
+        function search_name() {
+                    var input, filter, ul, li, i, name;
+                    li = ul.getElementsByTagName("li");
+                    input = document.getElementById("inp");
+                    filter = input.value.toLowerCase();
+                    ul = document.getElementById("names");
+                    for (i = 0; i < li.length; i++) {
+                        name = li[i].getElementsByTagName("span")[0];
+                        if (name.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+                </script>
+    <div>
+        <input type="text" id="inp" onkeyup="search_name()" placeholder="Search a name below.." title="Type a name">
+
+        <ul id="names">
+            <li>
+                <span>~help - Sends a help message!</span>
+            </li>
+            <li>
+                <span>~about - Sends you a bunch of info about the bot!</span>
+            </li>
+            <li>
+                <span>~kick &lt;person&gt; &lt;reason&gt; - Kicks a person you mention!</span>
+            </li>
+            <li>
+                <span>~ban &lt;person&gt; &lt;reason&gt; - Bans a person you mention!</span>
+            </li>
+            <li>
+                <span>~r34 &lt;input&gt; - Pull images from rule34, how lewd!</span>
+            </li>
+            <li>
+                <span>~cowsay &lt;input&gt; - 🐮 Moo!</span>
+            </li>
+            <li>
+                <span>~radio - Plays jpop from listen.moe!</span>
+            </li>
+            <li>
+                <span>~ping - Pong.</span>
+            </li>
+            <li>
+                <span>~cat - Megumin sends a random cat image! MEOW ^^</span>
+            </li>
+            <li>
+                <span>~garfield - Radnom garfield comic!</span>
+            </li>
+            <li>
+                <span>~uptime - 🕒Tells you how long the bot has been running for!</span>
+            </li>
+            <li>
+                <span>~8ball - Megumin will read your future!</span>
+            </li>
+            <li>
+                    <span>~play &lt;input&gt; - 🎶Plays music!</span>
+                </li>
+                <li>
+                        <span>~website - Gives you a link to my website!</span>
+                    </li>
+                    <li>
+                            <span>~invite - Gives you a link to invite me anyhwere!</span>
+                        </li>
+                        <li>
+                                <span>~urbandict &lt;input&gt; - Pulls info from the urban dictionary!</span>
+                            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
