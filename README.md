@@ -1,10 +1,10 @@
-# DEPRECATED THIS REPO WILL NO LONGER BE UPDATED
+yo its back fuckers
 
 
 
 
 # Megumin
-Megumin is a bot. 
+generic bot 
 
 [Invite Me!](https://discordapp.com/api/oauth2/authorize?client_id=337569157857935361&permissions=8&scope=bot)
 # Commands
