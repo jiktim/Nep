@@ -1,3 +1,8 @@
+# DEPRECATED THIS REPO WILL NO LONGER BE UPDATED
+
+
+
+
 # Megumin
 Megumin is a bot. 
 
