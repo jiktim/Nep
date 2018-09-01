@@ -1,8 +1,8 @@
-// WORK IN PROGRESS (PROBABLY NOT CURRENTLY WORKING CAUSE FIREC IS AN IDIOT)
+//DEPRECATED
 const {
   google
 } = require('googleapis');
-const key = 'AIzaSyBXcfJ5kwQ9t8xvppno8yjkJZkc9PwreXs'
+const key = URKEYHERE
 const ytdl = require("ytdl-core");
 const ytcache = './youtube-cache/' //where the files will be temporearly downloaded to!
 const fs = require("fs");
