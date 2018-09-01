@@ -17,20 +17,27 @@ h1.title {
     font-weight: lighter;
     font-size: 75px;
 }
-button {
+.invite {
     height: 50px;
-    width: 100px;
+    width: 90px;
     font-size: 25px;
     border: none;
+    transition: 0.3s;
 }
-@keyframes hovercolor {
-    from {background-color: #E4E4E4;}
-    to {background-color: #f44542;}
+
+.invite:hover {
+background-color: #f44542;
 }
-button:hover {
-animation-name: hovercolor;
-animation-duration: 0.4s;
-animation-direction: normal
+.commands {
+    height: 50px;
+    width: 170px;
+    font-size: 25px;
+    border: none;
+    transition: 0.3s;
+}
+
+.commands:hover {
+background-color: #7eff6d;
 }
 main {
     display: -webkit-flex;
