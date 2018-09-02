@@ -8,14 +8,17 @@
     <meta property="og:description" content="Megumin commands!">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./commands.css">
 </head>
 
 <body>
-    <ul>
-        <li style="float: left;"><a class="active" href="./index.html">Home</a></li>
-        <li style="float: left;font-weight: bold;"><a href="./commands.html">Commands</a></li>
-        <li style="float: left;"><a href="./about.html">About</a></li>
-    </ul>
+    <div class="menu">
+            <ul class="menu-items">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./commands.html"><b>Commands</b></a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+    </div>
     <br>
     <script>
         function search_cmd() {
@@ -34,7 +37,7 @@
                     }
                 }
                 </script>
-    <div>
+    <div class="commandiv">
         <input type="text" id="inp" onkeyup="search_cmd()" placeholder="Search a command below..." title="Type a command">
 
         <ul id="names">

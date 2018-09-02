@@ -7,19 +7,22 @@
         <meta property="og:description" content="Megumin the discord bot! ^^">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="index.css"/>
     </head>
     <body>
         <div class="background"></div>
-        <main>
-            <div class="lul">
+        <main class="main-container">
+            <div class="main-content">
                 <h1 class="title">Megumin</h1>
-                <button onclick="location.href='https://discordapp.com/oauth2/authorize?client_id=255397678492418048&scope=bot&permissions=8'" class="invite">
-				Invite
-                </button>
-                <button onclick="location.href='./commands.html'" class="commands">
-                    Commands
+                <div class="main-buttons">
+                    <button onclick="location.href = 'https://discordapp.com/oauth2/authorize?client_id=255397678492418048&scope=bot&permissions=8'" class="invite">
+                        Invite
                     </button>
-            <div>
+                    <button onclick="location.href = './commands.html'" class="commands">
+                        Commands
+                    </button>
+                </div>
+            </div>
         </main>
     </body>
 </html>

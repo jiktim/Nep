@@ -1,17 +1,3 @@
-html, body, main, .background {
-    height: 100%;
-	padding: 0;
-    width: 100%;
-    margin: 0;
-}
-
-.commandiv {
-border: solid 1px black;
-border-radius: 3px;
-margin-left: 40px;
-margin-right: 40px;
-}
-
 * {
     font-family: 'Quicksand', sans-serif;
 }
@@ -23,8 +9,6 @@ ul {
     background-image: url("./img/806274.png");
     background-position: center
 }
-
-
 li a {
     display: block;
     color: rgb(32, 32, 32);
@@ -40,81 +24,21 @@ h1.title {
     font-weight: lighter;
     font-size: 75px;
 }
-.invite {
-    height: 50px;
-    width: 90px;
-    font-size: 25px;
-    border: none;
-    transition: 0.3s;
-}
-
-.invite:hover {
-background-color: #f44542;
-}
-.commands {
-    height: 50px;
-    width: 170px;
-    font-size: 25px;
-    border: none;
-    transition: 0.3s;
-}
-body{
-    margin: 0;
-  }
-  div{
-    width: 60%;
-    margin: 2em auto
-  }
-  input {
-    width: 100%;
-    font-size: 16px;
-    padding: 0.5em;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
-  }
-  ul{
-    list-style-type: none;
-    padding: 0.5em;
+html, body, main, .background {
+    height: 100%;
+	padding: 0;
     width: 100%;
     margin: 0;
-  }
-
-  span{
-    border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    display: block
-  }
-  span:hover{
-    background-color: #eee;
-  }
-.commands:hover {
-background-color: #7eff6d;
-}
-main {
-    display: -webkit-flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
-.background {
-    background-image: url("./img/806274.png");
-	background-size: cover;
-    filter: blur(7px);
-    opacity: 0.5;
-    position: fixed;
-    z-index: -1
+.menu-items > * {
+    float: left;
+}
+.menu-items * {
+    color: white;
 }
 
-.lul {
-    text-align: center;
-}
-
-li {
-    opacity: 0.8;
+.menu-items {
+    padding: 0;
+    margin: 0;
 }

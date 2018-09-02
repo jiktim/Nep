@@ -1,0 +1,14 @@
+/* haha */
+.menu-items > * {
+    float: left;
+}
+.menu-items * {
+    color: white;
+}
+.about-content {
+    padding-left: 30px;
+}
+.menu-items {
+    padding: 0;
+    margin: 0;
+}

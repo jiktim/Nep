@@ -1,0 +1,47 @@
+
+.invite {
+    height: 50px;
+    width: 90px;
+    font-size: 25px;
+    border: none;
+    transition: 0.3s;
+}
+
+.invite:hover {
+    background-color: #f44542;
+}
+
+.commands {
+    height: 50px;
+    width: 170px;
+    font-size: 25px;
+    border: none;
+    transition: 0.3s;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.main-content > h1 {
+    margin: 10px;
+}
+.main-buttons button {
+    display: inline;
+}
+.main-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+.background {
+    background-image: url("./img/806274.png");
+    background-size: cover;
+    filter: blur(7px);
+    opacity: 0.5;
+    position: fixed;
+    z-index: -1
+}
+
+li {
+    opacity: 0.8;
+}
