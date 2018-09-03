@@ -1,2 +1,2 @@
 # megumin
-dis gh
+https://jiktim.github.io/megumin/
