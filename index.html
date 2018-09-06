@@ -9,11 +9,6 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="index.css"/>
     </head>
-    <script>
-        var imgs = ["./img/805768.png", "./img/806274.png", "./img/828791.png"]
-var lul = imgs[Math.floor(Math.random()*imgs.length)];
-        document.getElementById('bg').style.backgroundImage = "url("+lul+")";
-    </script>
     <body>
         <div id="bg" class="background"></div>
         <main class="main-container">
@@ -31,3 +26,22 @@ var lul = imgs[Math.floor(Math.random()*imgs.length)];
         </main>
     </body>
 </html>
+    <script>
+        var imgs = ["./img/805768.png", "./img/806274.png", "./img/828791.png"]
+var lul = imgs[Math.floor(Math.random()*imgs.length)];
+        document.getElementById('bg').style.backgroundImage = "url("+lul+")";
+        function onKonamiCode(cb) {
+  var input = '';
+  var key = '38384040373937396665';
+  document.addEventListener('keydown', function (e) {
+    input += ("" + e.keyCode);
+    if (input === key) {
+      return cb();
+    }
+    if (!key.indexOf(input)) return;
+    input = ("" + e.keyCode);
+  });
+}
+
+onKonamiCode(function () {alert('owo')})
+    </script>
