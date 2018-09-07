@@ -29,19 +29,5 @@
     <script>
         var imgs = ["./img/805768.png", "./img/806274.png", "./img/828791.png"]
 var lul = imgs[Math.floor(Math.random()*imgs.length)];
-        document.getElementById('bg').style.backgroundImage = "url("+lul+")";
-        function onKonamiCode(cb) {
-  var input = '';
-  var key = '38384040373937396665';
-  document.addEventListener('keydown', function (e) {
-    input += ("" + e.keyCode);
-    if (input === key) {
-      return cb();
-    }
-    if (!key.indexOf(input)) return;
-    input = ("" + e.keyCode);
-  });
-}
-
-onKonamiCode(function () {alert('owo')})
+        document.getElementById('bg').style.backgroundImage = "url("+lul+")";function onKonamiCode(cb) {var input = '';var key = '38384040373937396665';document.addEventListener('keydown', function (e) {input += ("" + e.keyCode);if (input === key) {return cb();}if (!key.indexOf(input)) return;input = ("" + e.keyCode);});}onKonamiCode(function () {document.getElementById('title').innerHTML = "Cheats activated!";document.getElementsByClassName('invite')[0].innerText = "OwO";document.getElementsByClassName('commands')[0].innerText = "OwO";var audio = new Audio('contra.mp3');audio.play();});
     </script>
