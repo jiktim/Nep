@@ -3,8 +3,9 @@
     height: 50px;
     width: 90px;
     font-size: 25px;
-    border: none;
+    border: solid 1px;
     transition: 0.3s;
+    border-color: rgba(0, 0, 0, 0.397);
 }
 
 .invite:hover {
@@ -15,7 +16,8 @@
     height: 50px;
     width: 170px;
     font-size: 25px;
-    border: none;
+    border: solid 1px;
+    border-color: rgba(0, 0, 0, 0.397);
     transition: 0.3s;
 }
 .commands:hover {
