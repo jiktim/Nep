@@ -7,7 +7,9 @@
     transition: 0.3s;
     border-color: rgba(0, 0, 0, 0.397);
 }
-
+button {
+background-color: #F5F5F5;
+}
 .invite:hover {
     background-color: #f44542;
 }
