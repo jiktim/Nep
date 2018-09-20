@@ -1,7 +1,7 @@
 // par cth103
 // truc de merde
 var dashes = '';
-cowsay = function(texte) {
+var cowsay = function(texte) {
 	// encore du code de merde
     dashes = '';
 	for (let i = 0; i < texte.length; i++) {

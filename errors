@@ -1,0 +1,6 @@
+errors wiped 9/12/2018 2:28pmTypeError: Cannot read property 'toLowerCase' of undefined
+TypeError: Cannot read property 'createInvite' of undefined
+TypeError: cmds[commandName] is not a function
+TypeError: cmds[commandName] is not a function
+TypeError: Cannot read property 'isPlaying' of undefined
+TypeError: Cannot read property 'isPlaying' of undefined

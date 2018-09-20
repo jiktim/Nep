@@ -17,7 +17,7 @@ module.exports = function(param, clientArg, args) { // it sends ping
     "timestamp": "2018-08-28T13:52:19.234Z",
     "footer": {
       "icon_url": "https://cdn.discordapp.com/avatars/255397678492418048/a8e516d198c913fb897aa592ce21e260.png",
-      "text": "~urbandict"
+      "text": "~urbandict" // ur mom gay
     },
     "author": {
       "name": "Megumin!",

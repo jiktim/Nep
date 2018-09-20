@@ -1,51 +1,27 @@
 var request = require('request');
 var booru = require('booru');
+const fs = require('fs');
 // beta
 var argument = new Array();
 var common;
 module.exports = function(param, clientArg, args) { // it sends help
-  argument[0] = clientArg;
-  booru.search('r34', [args], {
+  if(param.channel.nsfw) {
+    if (args.toLowerCase().includes("loli") | args.toLowerCase().includes("child") | args.toLowerCase().includes("girl") |  args.toLowerCase().includes("young") | args.toLowerCase().includes("kid") | args.toLowerCase().includes("boy") | args.toLowerCase().includes("underag") | args.toLowerCase().includes("minor")) {
+     param.channel.createMessage("As Megumin is hosted in France, lolicons are illegal under Article 227-23 since 1994 (24 years :O), So I do not have the right to give you lolicon. :smiley:"); // log it into a file lol sure
+     fs.appendFile('pedolog', param.member.username + "#" + param.member.discriminator + " ("+param.member.id+") \n", function (err) {
+         if (err) throw err;
+   });
+ } else {
+     booru.search('r34', [args], {
       limit: 1,
       random: true
-    })
-    .then(booru.commonfy)
-    .then(images => {
-      if (param.channel.nsfw) {
+    }).then(booru.commonfy)
+      .then(images => {
         for (let image of images) {
-          const data = {
-            "embed": {
-              "title": "Here is your image!",
-              "color": 16711680,
-              "timestamp": "2018-08-28T13:52:19.234Z",
-              "footer": {
-                "icon_url": "https://cdn.discordapp.com/avatars/255397678492418048/a8e516d198c913fb897aa592ce21e260.png",
-                "text": "~urbandict"
-              },
-              "image": {
-                "url": image.common.file_url
-              },
-              "author": {
-                "name": "Megumin!",
-                "url": "https://discordapp.com",
-                "icon_url": "https://cdn.discordapp.com/avatars/255397678492418048/a8e516d198c913fb897aa592ce21e260.png"
-              },
-              "fields": [{
-                "name": "​",
-                "value": "​"
-              }]
-            }
-          };
-          param.channel.createMessage(data);
+          param.channel.createMessage("Here is a lewd picture: "+image.common.file_url);
         }
-
-      } else {
-        param.channel.createMessage('This is not an NSFW channel :smiley:');
-      }
-    })
-    .catch(err => {
-      if (err.name == 'BooruError') {
-        param.channel.createMessage("I couldnt find an image... sorry! 😞");
-      }
-    })
+        })
+ }} else {
+    param.channel.createMessage('This is not an NSFW channel :smiley:');
+  }
 }

@@ -1,4 +1,5 @@
-module.exports = function(param, clientArg, args, bot) {
+var os = require('os');
+module.exports = function(param, bot, args) {
   const toHHMMSS = seconds => { //convert to HH:MM:SS
     var secNum = parseInt(seconds, 10); // don't forget the second param
     var hours = Math.floor(secNum / 3600);
@@ -18,7 +19,7 @@ module.exports = function(param, clientArg, args, bot) {
       "timestamp": new Date(),
       "footer": {
         "icon_url": "https://cdn.discordapp.com/avatars/255397678492418048/a8e516d198c913fb897aa592ce21e260.png",
-        "text": "~urbandict"
+        "text": "~about"
       },
       "author": {
         "name": "Megumin!",
@@ -27,16 +28,27 @@ module.exports = function(param, clientArg, args, bot) {
       },
       "fields": [
         {
-          "name": "Servers",
-          "value": bot.guilds.size
+          "name": "Guilds",
+          "value": "**```prolog\n"+bot.guilds.size+"\n```**"
+        },{
+          "name": "Bot version",
+          "value": "**```prolog\n"+global.version+"\n```**"
         },
         {
           "name": "Users",
-          "value": bot.users.size
+          "value": "**```prolog\n"+bot.users.size+"\n```**"
         },
         {
           "name": "Uptime",
-          "value": time
+          "value": "**```prolog\n"+time+"\n```**"
+        },
+        {
+          "name": "Memory",
+          "value": "**```prolog\n"+os.freemem()/1000000+" MB / "+os.totalmem()/1000000+" MB\n```**"
+        },
+        {
+          "name": "Streams",
+          "value": "**```prolog\n"+bot.voiceConnections.size+"\n```**"
         }
       ]
     }
