@@ -1,3 +1,5 @@
+// good solution amirite
+
 module.exports = function(msg, bot, args) {
   if (args) {
     if (msg.member.permission.has("kickMembers") == true) { // check perms
@@ -7,7 +9,7 @@ module.exports = function(msg, bot, args) {
         console.log(msg.mentions[0])
         var person2kick = msg.guild.members.find(fn => fn.id == msg.mentions[0].id);
         if (person2kick.permission.has("kickMembers" || "banMembers")) { //A BUSE 
-        bot.createMessage(msg.channel.id, ":x: ``You cant kick a fellow moderator!``")
+        bot.createMessage(msg.channel.id, ":x: ``You cant kick a fellow moderator! (yet)``")
         } else {
           console.log(args.slice(msg.mentions[0].id.length+3))
           if(args.slice(msg.mentions[0].id.length+4).size > 2) {

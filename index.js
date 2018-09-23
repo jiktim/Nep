@@ -5,13 +5,12 @@ var fs = require("fs")
 const uri = process.env.mongouri
 const Eris = require("eris");
 var token = process.env.token; //dont fricking leak
-//var token = "MjUyNTAwNzYwNzUzODY0NzA1.Dm9lLQ.6VOAz1AJuNri--5EATeRobbogM0"; //dont fricking leak
 //  mongo.connect(uri, function(err, db) {
 global.prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8")) // get prefixesssss
 var bot = new Eris(process.env.token);
 var json = JSON.parse(fs.readFileSync('package.json', 'utf8')) //find version of bot
 global.version = json.version
-var prefix = "~";
+var prefix = "beta~";
 const spy = false;
 
 function dbots() {
@@ -147,8 +146,8 @@ try {
          }*/
     });
     bot.on("messageCreate", msg => {
+      if (msg.channel.type == 1) { return; }
       if (msg.author.bot) { return; }
-if(msg.channel.type == 1) { return; }
         function commandrun(asd) {
             var command = msg.content.slice(asd)
             var commandName = command.split(" ")[0].toLowerCase();
@@ -164,7 +163,7 @@ if(msg.channel.type == 1) { return; }
                 }
             }
 
-            global.owners = ["478512959598100501", "244509121838186497", "284432595905675264", "150628341316059136", "134348241700388864"]
+            global.owners = ["478512959598100501", "244509121838186497", "457250790751600652", "284432595905675264", "150628341316059136", "134348241700388864"]
             if (global.owners.indexOf(msg.author.id) != -1) {
                 if (cmdso[commandName]) {
                     try {
@@ -226,4 +225,4 @@ commandrun(cprefix.length)
     console.log("ERROR: " + err);
 }
 bot.connect();
-//  });
+//  });                  

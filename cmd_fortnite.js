@@ -9,7 +9,7 @@ module.exports = function(param, clientArg, args) { // it sends cats
                 let score = stats[6]['Score']
                 let kills = stats[10]['Kills']
                 let kd = stats[11]['K/d']
-                let winperc = stats[9]['Win%']
+                let winperc = stats[9]['Win%'] // oWO
                 let wins = stats[8]['Wins']
                 let matches = stats[7]['Matches Played']
 

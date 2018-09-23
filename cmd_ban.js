@@ -1,3 +1,5 @@
+// good solution amirite v2
+
 module.exports = function(msg, bot, args) {
   if (args) {
     if (msg.member.permission.has("banMembers") == true) { // check if mod has perm to ban
@@ -7,7 +9,7 @@ module.exports = function(msg, bot, args) {
         console.log(msg.mentions[0])
         var person2kick = msg.guild.members.find(fn => fn.id == msg.mentions[0].id);
         if (person2kick.permission.has("kickMembers" || "banMembers")) { // potentially reduce abuse
-        bot.createMessage(msg.channel.id, ":x: ``You cant ban a fellow moderator!``")
+        bot.createMessage(msg.channel.id, ":x: ``You cant ban a fellow moderator! (yet)``")
         } else {
           if(args.slice(msg.mentions[0].id.length+4).size > 1) { // check if there is a reason
       person2kick.kick("Banned by: "+msg.member.username+" for "+args.slice(msg.mentions[0].id.length+3))
