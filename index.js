@@ -10,7 +10,7 @@ global.prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8")) // get 
 var bot = new Eris(process.env.token);
 var json = JSON.parse(fs.readFileSync('package.json', 'utf8')) //find version of bot
 global.version = json.version
-var prefix = "beta~";
+var prefix = "~";
 const spy = false;
 
 function dbots() {
